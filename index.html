@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Julien Maillet - Portfolio Data &amp; BI</title>
+    <meta name="description" content="Portfolio de Julien Maillet, étudiant en BUT Informatique (parcours AGED) à l’IUT Lyon 1. Recherche de stage et d’alternance en Data / BI.">
+    <link rel="canonical" href="https://j-maillet.github.io/">
+    <meta name="google-site-verification" content="V4YR7e_-hONNZB6e1QtZ2843EXFIMjcy2qTG1t_AumU">
+
+    <!-- Aperçu réseaux -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://j-maillet.github.io/">
+    <meta property="og:title" content="Julien Maillet - Portfolio Data &amp; BI">
+    <meta property="og:description" content="Étudiant en BUT Informatique (parcours AGED) à l’IUT Lyon 1. Recherche de stage et d’alternance en Data / BI.">
+
+    <!-- Apparence & polices -->
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+
+    <!-- ── NAVIGATION ── -->
+    <header class="header" id="siteHeader">
+      <nav class="nav" id="nav" aria-label="Navigation principale">
+        <div class="nav-inner">
+          <a href="#about" class="nav-logo" aria-label="Julien Maillet, accueil">Julien<span>.</span>Maillet</a>
+          <ul class="nav-links">
+            <li><a href="#about" data-nav>À propos</a></li>
+            <li><a href="#competences" data-nav>Compétences</a></li>
+            <li><a href="#projects" data-nav>Projets</a></li>
+            <li><a href="#passions" data-nav>En dehors des cours</a></li>
+          </ul>
+          <a href="#contact" class="btn btn--primary nav-cta">Me contacter</a>
+          <button class="nav-burger" id="navBurger" type="button" aria-label="Ouvrir le menu" aria-controls="navMobile" aria-expanded="false">
+            <span></span><span></span><span></span>
+          </button>
+        </div>
+        <div class="nav-mobile" id="navMobile" aria-hidden="true">
+          <ul>
+            <li><a href="#about" data-nav>À propos</a></li>
+            <li><a href="#competences" data-nav>Compétences</a></li>
+            <li><a href="#projects" data-nav>Projets</a></li>
+            <li><a href="#passions" data-nav>En dehors des cours</a></li>
+            <li><a href="#contact" class="btn btn--primary nav-cta" data-nav>Me contacter</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <!-- ── À PROPOS ── -->
+      <section class="section" id="about" aria-labelledby="about-title">
+        <div class="hero">
+          <p>-- IUT Lyon 1 · Parcours AGED</p>
+          <h1 id="about-title">Julien Maillet</h1>
+          <p>Étudiant en 2ᵉ année de BUT Informatique</p>
+          <p>Recherche un stage en Data / Business Intelligence à partir du 6 avril 2026 (8 à 10 semaines), suivi d’une alternance</p>
+
+          <div>
+            <a href="#projects" class="btn btn--primary">Voir mes projets</a>
+            <a href="#contact" class="btn btn--ghost">Me contacter</a>
+          </div>
+        </div>
+
+        <div class="about__details" id="aboutDetails">
+          <p>
+            J’aimerais travailler sur des sujets concrets autour des bases de données (SQL, PL/SQL) et de l’aide à la décision (Power BI), avec la possibilité de poursuivre en alternance pour ma 3ᵉ année.
+          </p>
+
+          <div>
+            <h2>Parcours scolaire</h2>
+            <div class="education-timeline" id="educationTimeline" role="region" aria-label="Parcours scolaire"></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ── COMPÉTENCES ── -->
+      <section class="section" id="competences" aria-labelledby="competences-title">
+        <p>-- TABLE: compétences</p>
+        <h2 id="competences-title">Compétences</h2>
+        <div class="skills-table" id="skillsList" role="table" aria-label="Compétences par domaine"></div>
+
+        <div class="technology-section">
+          <h3>Les technologies que j’utilise</h3>
+          <div class="technology-filters" role="group" aria-label="Filtrer les technologies">
+            <button class="technology-filter is-active" type="button" data-filter="all" aria-pressed="true">Tout</button>
+            <button class="technology-filter" type="button" data-filter="data" aria-pressed="false">Data &amp; BI</button>
+            <button class="technology-filter" type="button" data-filter="dev" aria-pressed="false">Développement</button>
+            <button class="technology-filter" type="button" data-filter="sys" aria-pressed="false">Systèmes &amp; Outils</button>
+            <button class="technology-filter" type="button" data-filter="design" aria-pressed="false">UX / UI</button>
+          </div>
+          <div class="technology-grid" id="technologyGrid" role="list" aria-label="Technologies"></div>
+        </div>
+      </section>
+
+      <!-- ── PROJETS ── -->
+      <section class="section" id="projects" aria-labelledby="projects-title">
+        <p>-- TABLE: projets</p>
+        <h2 id="projects-title">Projets</h2>
+        <p>Quelques projets réalisés en cours ou sur mon temps libre. <br>
+          Cliquez sur une carte pour ouvrir la fiche détaillée.</p>
+        <div class="projects" id="projectsList" role="list" aria-label="Projets"></div>
+        <div id="dialogs"></div>
+      </section>
+
+      <!-- ── PASSIONS ── -->
+      <section class="section" id="passions" aria-labelledby="passions-title">
+        <p>-- TABLE: passions</p>
+        <h2 id="passions-title">En dehors des cours</h2>
+        <p>
+          Ce qui occupe mon temps libre : le sport en compétition,
+          les parties d’échecs quotidiennes et les nouvelles technologies.
+        </p>
+        <div class="passions" id="passionsList" role="list" aria-label="Centres d’intérêt"></div>
+      </section>
+
+      <!-- ── CONTACT ── -->
+      <section class="section" id="contact" aria-labelledby="contact-title">
+        <p>-- TABLE: contact</p>
+        <h2 id="contact-title">Discutons</h2>
+        <p>
+          Mon profil vous intéresse pour un stage ou une alternance en Data / BI ? <br>
+          Vous pouvez parcourir mes projets sur GitHub ou me contacter directement par mail et sur LinkedIn.
+        </p>
+
+        <div class="contact-links">
+          <a href="https://linkedin.com/in/maillet-julien" target="_blank" rel="noopener noreferrer" class="btn btn--primary" aria-label="Profil LinkedIn de Julien Maillet">
+            <img src="assets/icons/linkedin.svg" alt="">
+            <span>Me contacter sur LinkedIn</span>
+          </a>
+          <a href="mailto:julien.maillet.fr@gmail.com" class="btn btn--ghost" aria-label="Envoyer un e-mail à Julien Maillet">
+            <img src="assets/icons/mail.svg" alt="">
+            <span>Email</span>
+          </a>
+          <a href="https://github.com/j-maillet" target="_blank" rel="noopener noreferrer" class="btn btn--ghost" aria-label="Profil GitHub de Julien Maillet">
+            <img src="assets/icons/github.svg" alt="">
+            <span>GitHub</span>
+          </a>
+        </div>
+      </section>
+    </main>
+    
+    <!-- ── RETOUR EN HAUT ── -->
+    <a href="#about" class="back-to-top" id="backToTop" aria-label="Revenir en haut de la page">
+      ↑
+    </a>
+
+    <!-- ── PIED DE PAGE ── -->
+    <footer class="footer">
+      <p>Julien Maillet - IUT Lyon 1, BUT Informatique.</p>
+    </footer>
+
+    <script src="js/data.js"></script>
+    <script src="js/navigation.js"></script>
+    <script src="js/modal.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
